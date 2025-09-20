@@ -1,6 +1,6 @@
 # ChatMemoryBot (aethermind)
 
-A tiny **chat-with-memory** console app built with **LangChain + OpenAI** that persists:
+A  **chat-with-memory** console app built with **LangChain + OpenAI** that persists:
 
 * **Short‑term memory** in **Redis** (conversation context per session)
 * **Long‑term logs** in **SQLite** via **SQLAlchemy** (queryable history)
@@ -111,7 +111,7 @@ You’ll see:
 
 ---
 
-## ⚙️ Dependencies (from `pyproject.toml`)
+##  Dependencies (from `pyproject.toml`)
 
 * `langchain`
 * `langchain-openai`
@@ -124,7 +124,7 @@ Managed with **Poetry**. See `pyproject.toml` for exact versions.
 
 ---
 
-## 🗄️ Persistence details
+##  Persistence details
 
 * **Redis**: keeps **short‑term** turn‑by‑turn memory for the active `session_id` ("my-session").
 * **SQLite** (`chatlogs.db`): appends each Q/A to the `ChatLog` table for long‑term auditing and analytics.
@@ -134,7 +134,7 @@ You can rotate `session_id` to separate conversations, or extend `chatlog.py` to
 ---
 
 
-## 🧪 Testing
+##  Testing
 
 Place unit tests in `tests/`. Example ideas:
 
@@ -144,7 +144,7 @@ Place unit tests in `tests/`. Example ideas:
 
 ---
 
-## 🧭 Roadmap
+##  Roadmap
 
 * [ ] Swap `ConversationChain` → `RunnableWithMessageHistory`
 * [ ] Add `/search <query>` to query past logs
@@ -157,3 +157,4 @@ Place unit tests in `tests/`. Example ideas:
 ##  Acknowledgments
 
 Built with ❤ using LangChain and OpenAI.
+
